@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+            background-color: rgb(223, 100, 100); /* Comentário em CSS*/
+            color: rgb(72, 18, 122);
+            font: normal 24pt arial;
+            }
+
+        h1 {
+            color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1> <!-- Comentário em HTML -->
+    <p>Já me livrei da maldição!!</p>
+    <script>
+    var n1 = Number(window.prompt('Digite o 1º número: ')) //String
+    var n2 = Number(window.prompt('Digite o 2º Numero: ')) //String
+    var s = n1 + n2
+    window.alert(`O resultado da soma entre ${n1} e ${n2} foi de ${s}`) //Concatenação
+    // (Number + Number) para adição.
+    // (String + String) para concatenação.
+    // Number.parseInt (n) --> Transformando para números Inteiros.
+    // Number.parseFloat (n) --> Transformando para números Reais.
+    /* Há dois jeitos de "formatar os números, transformando de String para Número. O primeiro é adicionando "Number.parseInt/parseFloat" na frente de "window.prompt". Ex: Number.parseInt(window.prompt('Digite o xº número:')). 
+       OBS: Podemos também utilizar somente o "Number", deixando assim o próprio programa decidir se é Inteiro ou Real com base no valor recebido. Porém, somente funciona nas versões mais recentes do ECMAScript, não excluindo o parseInt e parseFloat para quando eu desejar forçar um tipo específico. */
+    /* Para formatar o texto de Número para String, há dois jeitos. O primeiro é utilizando o (n)".toString" e o segundo é "String"(n). Ex: "('O resultado foi ' + String(s))" ou "('O resultado foi' + s.toString())"*/
+    </script>
+</body>
+</html>
