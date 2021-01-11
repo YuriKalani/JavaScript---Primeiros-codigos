@@ -6,7 +6,7 @@
     <title>Meu primeiro programa...</title>
     <style>
         body {
-            background-color: rgb(223, 100, 100);
+            background-color: rgb(223, 100, 100); /* Comentário em CSS*/
             color: rgb(72, 18, 122);
             font: normal 24pt arial;
             }
@@ -18,12 +18,11 @@
     </style>
 </head>
 <body>
-    <h1>Olá, Mundo!</h1>
+    <h1>Olá, Mundo!</h1> <!---Comentário em HTML-->
     <p>Já me livrei da maldição!!</p>
     <script>
-        window.alert('Meu primeiro alerta!!'); //Alerta na página, antes de mostrar o conteúdo da mesma.
-        window.confirm('Está gostando de programar?'); //Janela com botão de Ok e Cancelar.
-        window.prompt('Qual o seu nome?'); //Vai perguntar o nome...
+        var nome = window.prompt('Qual o seu nome?'); //Vai perguntar o nome...
+        window.alert('É um grande prazer te conhecer, ' + nome + '! :3') //O sinal de + significa Concatenação.
     </script>
 </body>
 </html>
