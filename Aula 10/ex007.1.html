@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de novo</title>
+    <style>
+        body{
+            font: normal 20px Arial;
+            background: rgb(202, 201, 144);
+        }
+        h1 {
+            color: red;
+        }
+        input {
+            width: 100px;
+        }
+        div#Result {
+            font: normal 30px Arial;
+            Color: Red;
+            margin-top: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input type="number" name="txn1" id="txn1"> +
+    <input type="number" name="txn2" id="txn2">
+    <input type="button" value="somar" onclick="Somar()">
+    <div id = "Result">Resultado</div>
+</body>
+<script>
+    function Somar() { 
+        var tx1 = window.document.getElementById('txn1')
+        var tx2 = window.document.getElementById('txn2')
+        var n1 = Number(tx1.value)
+        var n2 = Number(tx2.value)
+        var result = window.document.getElementById('Result')
+        var soma = n1 + n2
+        result.innerHTML = `A soma do valor ${n1} e do valor ${n2} é igual a <strong>${soma}</strong>`
+    }
+</script>
+</html>
