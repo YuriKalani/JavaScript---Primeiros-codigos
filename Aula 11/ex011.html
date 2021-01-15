@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de nascionalidade</title>
+    <style>
+        h2 {
+            text-align: Center;
+        }
+        body {
+            background: rgb(228, 223, 223);
+        }
+        input {
+            font: normal 16px arial;
+            width: 100px;
+            color: rgb(17, 17, 17);
+
+        }
+        div#fontt {
+            font: normal 16px Arial;
+        }
+        div#nana {
+            font: normal 16px Arial;
+        }
+    </style>
+</head>
+<body>
+    <h2>Nacionalidade</h2>
+    <div id="fontt">Digite seu país de origem: <input type="text" name="nasc" id="nasc">
+    <input type="button" value="verificar" onclick="verificação()"></div>
+    <div id="nana"><p><strong>Aguardando resposta</strong></p></div>
+</body>
+<script>
+    function verificação() {
+        var nasctxt = window.document.getElementById('nasc')
+        var nascfr = window.String(nasctxt.value)
+        var resp = window.document.querySelector("div#nana")
+        resp.innerHTML = `<p>Você vive no <strong>${nascfr}!</strong></p> `
+        if (nascfr == "Brasil") {
+            resp.innerHTML += `<p>Você é <strong>Brasileiro!!</strong><p>`
+        } else {
+            resp.innerHTML += `<p>Você é <strong>estrangeiro!!</strong></p>`
+        }
+    }
+</script>
+</html>
