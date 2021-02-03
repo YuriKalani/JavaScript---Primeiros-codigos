@@ -14,7 +14,7 @@ section {
     background: white;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
+    width: 400px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.671);
 }
@@ -25,3 +25,12 @@ footer {
     font-style: italic;
 }
 
+div {
+    text-align: center;
+    padding: 8px;
+}
+
+p#bomdia {
+   font-style: italic;
+   
+}
